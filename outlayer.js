@@ -982,8 +982,18 @@ return Outlayer;
 }
 
 // -------------------------- transport -------------------------- //
-
-if ( typeof define === 'function' && define.amd ) {
+if (typeof exports === 'object') {
+  // CommonJS
+  module.exports = outlayerDefinition(
+    require('jquery'),
+    require('eventie'),
+    require('doc-ready'),
+    require('eventemitter'),
+    require('get-size'),
+    require('matches-selector'),
+    require('./item')
+  );
+} else if ( typeof define === 'function' && define.amd ) {
   // AMD
   define( [
       'jquery',
@@ -995,17 +1005,6 @@ if ( typeof define === 'function' && define.amd ) {
       './item'
     ],
     outlayerDefinition );
-} else if (typeof exports === 'object') {
-  // CommonJS
-  module.exports = outlayerDefinition(
-    require('jquery'),
-    require('eventie'),
-    require('doc-ready'),
-    require('eventemitter'),
-    require('get-size'),
-    require('matches-selector'),
-    require('./item')
-  );
 } else {
   // browser global
   window.Outlayer = outlayerDefinition(
