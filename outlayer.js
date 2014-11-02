@@ -5,8 +5,9 @@
  */
 
 ( function( window ) {
-
 'use strict';
+
+if (!window) return;
 
 // ----- vars ----- //
 
@@ -1018,4 +1019,4 @@ if ( typeof define === 'function' && define.amd ) {
   );
 }
 
-})( window );
+})( typeof window !== 'undefined' ? window : null );
