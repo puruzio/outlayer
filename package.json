@@ -8,7 +8,7 @@
     "doc-ready": "desandro/doc-ready",
     "eventemitter": "braznaavtrav/EventEmitter",
     "eventie": "desandro/eventie",
-    "get-size": "desandro/get-size",
+    "get-size": "eiriklv/get-size",
     "jquery": ">=1.4.3 <2",
     "jquery-bridget": "braznaavtrav/jquery-bridget",
     "matches-selector": "desandro/matches-selector"

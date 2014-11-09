@@ -3,8 +3,9 @@
  */
 
 ( function( window ) {
-
 'use strict';
+
+if (!window) return;
 
 // ----- get style ----- //
 
@@ -501,8 +502,14 @@ return Item;
 }
 
 // -------------------------- transport -------------------------- //
-
-if ( typeof define === 'function' && define.amd ) {
+if (typeof exports === 'object') {
+  // CommonJS
+  module.exports = outlayerItemDefinition(
+    require('eventemitter'),
+    require('get-size'),
+    require('desandro-get-style-property')
+  );
+} else if ( typeof define === 'function' && define.amd ) {
   // AMD
   define( [
       'eventEmitter/EventEmitter',
@@ -510,13 +517,6 @@ if ( typeof define === 'function' && define.amd ) {
       'get-style-property/get-style-property'
     ],
     outlayerItemDefinition );
-} else if (typeof exports === 'object') {
-  // CommonJS
-  module.exports = outlayerItemDefinition(
-    require('eventemitter'),
-    require('get-size'),
-    require('desandro-get-style-property')
-  );
 } else {
   // browser global
   window.Outlayer = {};
@@ -527,4 +527,4 @@ if ( typeof define === 'function' && define.amd ) {
   );
 }
 
-})( window );
+})( typeof window !== 'undefined' ? window : null );
