@@ -4,10 +4,10 @@
   "description": "the brains and guts of a layout library",
   "main": "outlayer.js",
   "dependencies": {
-    "desandro-get-style-property": "^1.0.4",
-    "doc-ready": "desandro/doc-ready",
+    "desandro-get-style-property": "eiriklv/get-style-property",
+    "doc-ready": "eiriklv/doc-ready",
     "eventemitter": "braznaavtrav/EventEmitter",
-    "eventie": "desandro/eventie",
+    "eventie": "eiriklv/eventie",
     "get-size": "eiriklv/get-size",
     "jquery": ">=1.4.3 <2",
     "jquery-bridget": "braznaavtrav/jquery-bridget",

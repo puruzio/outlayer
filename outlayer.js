@@ -990,7 +990,7 @@ if (typeof exports === 'object') {
     require('doc-ready'),
     require('eventemitter'),
     require('get-size'),
-    require('matches-selector'),
+    require('desandro-matches-selector'),
     require('./item')
   );
 } else if ( typeof define === 'function' && define.amd ) {
