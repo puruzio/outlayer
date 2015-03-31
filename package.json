@@ -9,12 +9,12 @@
     "eventemitter": "braznaavtrav/EventEmitter",
     "eventie": "eiriklv/eventie",
     "get-size": "eiriklv/get-size",
-    "jquery": ">=1.4.3 <2",
-    "jquery-bridget": "braznaavtrav/jquery-bridget",
     "matches-selector": "desandro/matches-selector"
   },
   "devDependencies": {
-    "qunit": "^0.7.5"
+    "qunit": "^0.7.5",  
+    "jquery": ">=1.4.3 <2",
+    "jquery-bridget": "braznaavtrav/jquery-bridget"
   },
   "repository": {
     "type": "git",
