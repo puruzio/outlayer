@@ -4,12 +4,12 @@
   "description": "the brains and guts of a layout library",
   "main": "outlayer.js",
   "dependencies": {
-    "desandro-get-style-property": "eiriklv/get-style-property",
-    "doc-ready": "eiriklv/doc-ready",
-    "eventemitter": "braznaavtrav/EventEmitter",
-    "eventie": "eiriklv/eventie",
-    "get-size": "eiriklv/get-size",
-    "desandro-matches-selector": "desandro/matches-selector"
+    "desandro-get-style-property": "https://github.com/eiriklv/get-style-property/archive/a5a74ad48d96c7d5ddcf652e9fa5d4283af37823.tar.gz",
+    "doc-ready": "https://github.com/puruzio/doc-ready/archive/4d82e5d5a00c89b56d3fb8bd8bc0032e7b9af312.tar.gz",
+    "eventemitter": "https://github.com/braznaavtrav/EventEmitter/archive/7169056a2f8b3b55d78ab1b85bad39277e7e88b2.tar.gz",
+    "eventie": "https://github.com/eiriklv/eventie/archive/c9d290c6aa57712257dc8c0b6bf21c9374190a3c.tar.gz",
+    "get-size": "https://github.com/puruzio/get-size/archive/5538bce74ce9c6746d9bcebf309706c80d933467.tar.gz",
+    "desandro-matches-selector": "https://github.com/desandro/matches-selector/archive/2d7702eab3393838e8098971a03cbec3fe7f5891.tar.gz"
   },
   "devDependencies": {
     "qunit": "^0.7.5",  
